@@ -1,0 +1,120 @@
+
+
+#header {
+    transition: all 0.5s;
+    z-index: 997;
+    transition: all 0.5s;
+    top: 20px;
+  }
+
+#header .tel {
+    background-color: #009970;
+    color: #fff;
+    border-radius:40px;
+    margin: 0 15px;
+    padding: 10px 25px;
+}
+  #header a {
+    color: #fff;
+    font-size: 22px;
+    text-decoration:underline;
+   }
+  
+  #header .header-container {
+    
+    background:#fff;
+  }
+  
+  #header.header-scrolled {
+    background: #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    top: 0;
+  }
+  
+  #header .logo {
+    overflow: hidden;
+    background: #009970;
+  }
+  #header .logo img {
+    padding: 0;
+    margin: 0;
+    max-height: 40px;
+  }
+  #header p {
+      color: #009970;
+      font-size:20px;
+      font-weight: 600;
+  }
+  @media (max-width: 992px) {
+    #header {
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+      top: 0;
+      background: #009970;
+    }
+    #header.header-scrolled, #header .header-container {
+      background: #009970;
+    }
+  }
+  #main {
+    width: 100%;
+    height: 80vh;
+    background: url("../imgs/saving-money-car-trade-car-cash.jpg") center center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  
+  #main:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  #main h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+  }
+  
+  #main .btn-get-started {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight:600;
+    font-size: 18px;
+    display: inline-block;
+    border-radius: 50px;
+    transition: 0.3s;
+    margin: 10px;
+    background-color: rgb(233, 233, 22);
+    color:black;
+  }
+  
+  #main .btn-get-started:hover {
+    background: #009970;
+    border: 1px solid #009970;
+  }
+  
+  @media (min-width: 1024px) {
+    #main {
+      background-attachment: fixed;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #main {
+      height: 100vh;
+    }
+    #main .container {
+      padding-top: 60px;
+    }
+    #main h1 {
+      font-size: 32px;
+      line-height: 36px;
+    }
+  }
+
