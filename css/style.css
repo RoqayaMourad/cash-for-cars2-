@@ -4,13 +4,18 @@
   
 }
 #header {
-  position: sticky;
-  top: 10px;
+  position: fixed;
+  top: 20px;
+  z-index: 5;
+  transition: all 400ms;
 }
 .header-scrolled {
   background: #fff;
+  background-color:#fff !important;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
   width:100%;
+  top: 0px !important;
+
 }
 #header .tel {
   background-color: #009970;
@@ -24,9 +29,15 @@
   font-size: 22px;
   text-decoration: underline;
 }
-#header .header-container {
-  background: #fff;
+#header.header-container {
+  background-color:transparent;
+  padding: 0 10%;
 }
+
+#header.header-container .header-row{
+  background-color:#fff !important;
+}
+
 #header .logo {
   overflow: hidden;
   background: #009970;
@@ -46,12 +57,13 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  overflow: auto;
+  overflow: unset;
+  padding-top: 100px;
 }
 
 .intro {
   position: relative;
-  overflow: hidden;
+  overflow: unset;
 }
 
 .overlay {
