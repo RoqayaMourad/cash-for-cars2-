@@ -1,120 +1,356 @@
-
-
-#header {
-    transition: all 0.5s;
-    z-index: 997;
-    transition: all 0.5s;
-    top: 20px;
-  }
-
-#header .tel {
-    background-color: #009970;
-    color: #fff;
-    border-radius:40px;
-    margin: 0 15px;
-    padding: 10px 25px;
+*{
+  padding: 0px;
+  margin:0px;
+  
 }
-  #header a {
-    color: #fff;
-    font-size: 22px;
-    text-decoration:underline;
-   }
-  
-  #header .header-container {
-    
-    background:#fff;
-  }
-  
-  #header.header-scrolled {
-    background: #fff;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-    top: 0;
-  }
-  
-  #header .logo {
-    overflow: hidden;
-    background: #009970;
-  }
-  #header .logo img {
-    padding: 0;
-    margin: 0;
-    max-height: 40px;
-  }
-  #header p {
-      color: #009970;
-      font-size:20px;
-      font-weight: 600;
-  }
-  @media (max-width: 992px) {
-    #header {
-      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-      top: 0;
-      background: #009970;
-    }
-    #header.header-scrolled, #header .header-container {
-      background: #009970;
-    }
-  }
-  #main {
-    width: 100%;
-    height: 80vh;
-    background: url("../imgs/saving-money-car-trade-car-cash.jpg") center center;
-    background-size: cover;
-    position: relative;
-  }
-  
-  
-  #main:before {
-    content: "";
-    background: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-  
-  #main h1 {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 56px;
-    color: #fff;
-  }
-  
-  #main .btn-get-started {
-    font-family: "Poppins", sans-serif;
-    text-transform: uppercase;
-    font-weight:600;
-    font-size: 18px;
-    display: inline-block;
-    border-radius: 50px;
-    transition: 0.3s;
-    margin: 10px;
-    background-color: rgb(233, 233, 22);
-    color:black;
-  }
-  
-  #main .btn-get-started:hover {
-    background: #009970;
-    border: 1px solid #009970;
-  }
-  
-  @media (min-width: 1024px) {
-    #main {
-      background-attachment: fixed;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    #main {
-      height: 100vh;
-    }
-    #main .container {
-      padding-top: 60px;
-    }
-    #main h1 {
-      font-size: 32px;
-      line-height: 36px;
-    }
-  }
+#header {
+  position: sticky;
+  top: 10px;
+}
+.header-scrolled {
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
+  width:100%;
+}
+#header .tel {
+  background-color: #009970;
+  color: #fff;
+  border-radius: 40px;
+  margin: 0 15px;
+  padding: 10px 25px;
+}
+#header a {
+  color: #fff;
+  font-size: 22px;
+  text-decoration: underline;
+}
+#header .header-container {
+  background: #fff;
+}
+#header .logo {
+  overflow: hidden;
+  background: #009970;
+}
+#header .logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 40px;
+}
+#header p {
+  color: #009970;
+  font-size: 20px;
+  font-weight: 600;
+}
+.view {
+  background: url(../imgs/saving-money-car-trade-car-cash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: auto;
+}
 
+.intro {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5)
+}
+.view .card {
+  border: 0;
+  border-radius: 5px;
+}
+
+.view .card-title {
+  background-color: #009970;
+  color: #fff;
+  border-radius: 5px 5px 0px 0px;
+}
+.view .card label {
+  font-size: 22px;
+  color: #009970;
+ font-weight: 600;
+ letter-spacing: 1px;
+}
+.view form span {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: .5;
+}
+/* cta btn */
+.cta-btn {
+  background-color:red;
+  color: #fff !important;
+  font-size: 25px;
+  box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+}
+.cta-btn:hover {
+  background-color: #009970;
+  box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+}
+
+.partners {
+  background-color: #F6F6F7;
+  text-align: center;
+  overflow: hidden;
+}
+.partners img {
+  width: 60%;
+  filter: grayscale(100);
+  transition: all 0.4s ease-in-out;
+  display: inline-block;
+}
+.partners img:hover{
+  filter: none;
+  transform: scale(1.1);
+}
+
+
+.about {
+  overflow: hidden;
+}
+.about h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+.about .content h3 {
+  font-weight: 500;
+  line-height: 32px;
+  font-size: 24px;
+}
+.about .content ul {
+  list-style: none;
+}
+.about .content ul i , .content p i  {
+  font-size: 28px;
+  color: #009970; 
+}
+
+
+
+.testimonials {
+  color:#313437;
+  background-color:#eef4f7;
+}
+
+.testimonials p {
+  color:#7d8285;
+  font-weight: 500;
+  line-height: 32px;
+
+}
+
+.testimonials h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+}
+.testimonials .item .box {
+  background-color:#fff;
+  position:relative;
+}
+
+.testimonials .item .box:after {
+  content:'';
+  position:absolute;
+  left:30px;
+  bottom:-24px;
+  width:0;
+  height:0;
+  border:15px solid transparent;
+  border-width:12px 15px;
+  border-top-color:#fff;
+}
+
+.testimonials .item .name {
+  font-weight:bold;
+  color:inherit;
+  font-size: 22px;
+}
+.testimonials .item .description {
+  font-size:18px;
+}
+
+.testimonials .item .author img {
+  max-width:60px !important;
+  float:left !important;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  background-color: #009970;
+  color:#F6F6F7;
+  font-size: 20px;
+}
+.footer a {
+color: #fff;
+text-decoration: underline;
+
+
+}
+
+/* devices responsiveness */
+@media (max-width:1000px) {
+  #header p {
+    display: none;
+  }
+}
+
+@media (max-width:767px) {
+  .testimonials h2 {
+    font-size:35px;
+  }
+}
+
+@media (min-width:768px) {
+  .testimonials .item {
+    height:220px;
+  }
+}
+@media (max-width:380px){
+ .header-container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: #009970 !important;
+ }
+ #header .logo {
+   padding:0px !important;
+ }
+ #header .tel {
+   margin: auto;
+ }
+ .view .heading {
+   font-size: 25px;
+ }
+}
