@@ -37,11 +37,12 @@ $(document).ready(function() {
 }
 var interval = setInterval('updateTimer()', 1000);
 
+
 $(document).ready(function (){
-    $("#scrollToFormBtn").click(function (){
-        console.log("Clicked");
-        $('html, body').animate({
-            scrollTop: $("#contact-sec").offset().top - 50
-        }, 400);
-    });
+  $("#scrollToFormBtn").click(function (){
+      console.log("Clicked");
+      $('html, body').animate({
+          scrollTop: $("#intro").offset().top - 50
+      }, 400);
+  });
 });
