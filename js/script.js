@@ -32,11 +32,10 @@ $(document).ready(function() {
 
     document.getElementById("timer")
         .innerHTML =
-        '<div>' + m + '<span>min</span></div>' +
-        '<div>' + s + '<span>sec</span></div>';
-};
-
-setInterval('updateTimer()', 1000);
+        '<div class="sale-counter">' +
+        '<div class="timer-border">'+m +'<span>min</span></div><div>'+s + '<span>sec</span></div></div>';
+}
+var interval = setInterval('updateTimer()', 1000);
 
 $(document).ready(function (){
     $("#scrollToFormBtn").click(function (){
