@@ -696,6 +696,9 @@ min-width: 10rem !important;
     font-size: 30px;
     line-height: 34px;
 }
+.steps-sec .content h3 {
+  font-size:19px !important;
+}
 }
 @media (max-width:300px){
   .sale{
