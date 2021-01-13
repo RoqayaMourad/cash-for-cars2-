@@ -616,7 +616,7 @@ min-width: 10rem !important;
     width: 38%;
   }
   .stickyphone{
-    display: inline-block !important;
+    display:block !important;
     position:sticky;
     right: 0;
     left: 0;   
@@ -624,7 +624,13 @@ min-width: 10rem !important;
   }
   #form1 {
     width: 100% !important;
-  }   
+  } 
+  .why-us .box {
+    padding: 44px 5px;
+  }
+  .why-us .box:hover {
+    padding: 40px 20px 30px 20px ;
+  }  
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -684,12 +690,7 @@ min-width: 10rem !important;
   .tel a {
     font-size: 18px !important;
   }
-  .why-us .box {
-    padding: 44px 5px;
-  }
-  .why-us .box:hover {
-    padding: 40px 20px 30px 20px ;
-  }
+
   .testimonials h2, .why-us h2, .about h2 {
     font-weight: 700;
     font-size: 30px;
