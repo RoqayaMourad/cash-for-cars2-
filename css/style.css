@@ -179,7 +179,7 @@ section{
   min-height:30rem;
   min-width:30rem;
   background-position: center;
-  background-size:contain;
+  background-size:cover;
   background-repeat: no-repeat;
   background-image: url(../imgs/4703584.jpg);
 }
@@ -559,6 +559,17 @@ padding: 0;
     top: -77px !important;
     width: ;
 }
+.sale .sale-img{
+min-width: 10rem !important;
+}
+.sale .sale-text h2 {
+  font-size:50px;
+	color:#e62e2e;
+  font-weight: 700;
+  color: #e62e2e;
+  text-shadow: 0px 0px 16px #15ce12;
+  /* text-shadow: 2px 2px 11px #000000; */
+  
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -683,4 +694,21 @@ padding: 0;
     font-weight: 700;
     font-size: 30px;
     line-height: 34px;
+}
+}
+@media (max-width:300px){
+  .sale{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+  #timer div {
+    min-width: 110px !important;
+    font-size: 40px !important;
+  
+  }
+  #timer div span {
+    font-size:20px !important;
+
+  }
+
 }
