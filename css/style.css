@@ -29,7 +29,7 @@ section{
 
 }
 #header .tel {
-  background-color:#003616;
+  background-color:#009970;
   color: #fff;
   border-radius: 40px;
   margin: 0 15px;
@@ -49,7 +49,7 @@ section{
 }
 #header .logo {
   overflow: hidden;
-  background:#003616;
+  background:#009970;
 }
 #header .logo img {
   padding: 0;
@@ -57,7 +57,7 @@ section{
   max-height: 40px;
 }
 #header p {
-  color:#003616;
+  color:#009970;
   font-size: 20px;
   font-weight: 600;
 }
@@ -101,7 +101,7 @@ section{
 }
 
 .view .card-title {
-  background-color:#003616;
+  background-color:#009970;
   color: #fff;
   border-radius: 5px 5px 0px 0px;
   text-align: left;
@@ -113,7 +113,7 @@ section{
 
 .view .card label {
   font-size: 22px;
-  color:#003616;
+  color:#009970;
   font-weight: 600;
   letter-spacing: 1px;
 }
@@ -141,7 +141,7 @@ section{
 }
 
 .cta-btn:hover {
-  background-color:#003616;
+  background-color:#009970;
   box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17);
 }
 .sale-text {
@@ -158,7 +158,7 @@ section{
                   10px 10px 0px #efa032, 
                   15px 15px 0px #46b59b, 
                   20px 20px 0px #017e7f, 
-                  25px 25px 0px #003616;
+                  25px 25px 0px #009970;
   /* color: #e62e2e;
   font-size: 50px;
   line-height: 60px;
@@ -215,7 +215,7 @@ section{
 }
 
 .cta-sec {
-  background-color:#003616;
+  background-color:#009970;
   color: #fff;
   font-size:30px;
   font-weight:600;
@@ -279,7 +279,7 @@ margin: 0px;
 .testimonials .item .box {
   background-color: #fff;
   position: relative;
-  filter: drop-shadow(0px 5px 4px#003616);
+  filter: drop-shadow(0px 5px 4px#009970);
 }
 
 .testimonials .item .box p {
@@ -321,7 +321,7 @@ margin: 0px;
 .steps-sec{
   position: relative;
   list-style: none;
-  background-color:#003616;
+  background-color:#009970;
   color: #fff;
 }
 .steps:before {
@@ -421,7 +421,7 @@ margin: 0px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
   transition: 0.5s;
   position: relative;
-  background-color:#003616d2;
+  background-color:#009970d2;
   max-height: 230px;
   overflow: hidden;
   margin-bottom: 30px;
@@ -474,7 +474,7 @@ padding: 0;
   color: #fff;
 }
 .footer {
-  background-color:#003616;
+  background-color:#009970;
   color: #F6F6F7;
   font-size: 20px;
 }
@@ -646,7 +646,10 @@ min-width: 10rem !important;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color:#003616 !important;
+    background-color:#009970 !important;
+  }
+  .header-scrolled {
+    background-color: #009970 !important;
   }
 
   #header .logo {
@@ -659,6 +662,7 @@ min-width: 10rem !important;
 
   .view .heading {
     font-size: 25px;
+    margin-top: 25px;
   }
 }
 
