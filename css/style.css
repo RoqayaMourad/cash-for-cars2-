@@ -1,5 +1,5 @@
 /* #009970 */
-/* trying amend commit */
+
 * {
   padding: 0px;
   margin: 0px;
@@ -314,8 +314,8 @@ margin: 0px;
 
 }
 
-.steps .subheading1{
-  padding-right:33px;
+.steps .subheading{
+  padding-left:33px;
 }
 
 .steps-sec{
@@ -324,23 +324,23 @@ margin: 0px;
   background-color:#009970;
   color: #fff;
 }
-.steps:before {
-  position: absolute;
-  top:43px;
-  bottom:90px;
-  left: 40px;
-  width: 2px;
-  margin-left: -15.5px;
-  content: "";
-  background-color: #e9ecef;
-}
+
 .steps-sec ul {
   list-style: none !important;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: space-around;
 }
 .steps> li {
-  z-index:1;
+  z-index: 1;
   position: relative;
-  /* min-height: 50px; */
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .steps> li:after, .steps> li:before {
   display: table;
@@ -353,8 +353,10 @@ margin: 0px;
   position: relative;
   float: right;
   width: 100%;
-  /* padding: 0 20px 0 100px; */
+  padding: 0 20px 0 0;
   text-align: left;
+  display: flex;
+  align-items: center;
 }
 .steps> li .timeline-panel:before {
   right: auto;
@@ -369,25 +371,44 @@ margin: 0px;
   border-left-width: 0;
 }
 .steps> li .timeline-image {
-  position: absolute;
+  /* position: absolute; */
   z-index: 100;
-  left: 0;
-  width:25px;
-  height:25px;
+  /* left: 0; */
+  width:30vw;
+  height:fit-content;
+  display: flex;
+  justify-content: center;
   margin-left: 0;
   text-align: center;
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
   background-color: #fed136;
+
 }
+.steps> li:first-child .timeline-image::after{
+  position: absolute;
+    top: 43px;
+    bottom: 20px;
+    width: 2px;
+    height: 500%;
+    content: "";
+    background-color: #e9ecef;
+}
+
 .steps> li .timeline-image h4 {
   font-size:10px;
+}
+.steps> li .timeline-image img {
+  z-index: 1;
 }
 .steps> li.timeline-inverted > .timeline-panel {
   float: right;
   /* padding: 0 20px 0 100px; */
   text-align: left;
+}
+.steps> li.timeline-inverted > .timeline-panel > h4 {
+  margin:0;
 }
 .steps> li.timeline-inverted > .timeline-panel:before {
   right: auto;
@@ -488,6 +509,7 @@ padding: 0;
   width:100%;
   background-color: red;   
   display: none;
+  z-index: 5;
   
 }
 .stickyphone a {
@@ -537,8 +559,8 @@ padding: 0;
   }
   .steps> li .timeline-image {
     width: 150px;
-    height: 150px;
-    margin-left: -75px;
+    height: auto;
+    /* margin-left: -75px; */
   }
   .steps> li .timeline-image h4 {
     font-size: 18px;
@@ -590,7 +612,7 @@ min-width: 10rem !important;
   .steps> li .timeline-image {
     left: 50%;
     width: 100px;
-    height: 100px;
+    height: auto;
   }
   .steps> li .timeline-image h4 {
     font-size: 13px;
@@ -630,7 +652,15 @@ min-width: 10rem !important;
   }
   .why-us .box:hover {
     padding: 40px 20px 30px 20px ;
-  }  
+  }
+  .steps> li:first-child .timeline-image::after{
+    height: 429%;
+  }
+
+  .steps-sec ul{
+    min-height: 650px;
+  }
+
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -671,7 +701,7 @@ min-width: 10rem !important;
     right: -47px !important;
     top: -64px !important;
     width: 38%;
-
+  }
 }
 @media (max-width:420px){
   .sale-badge {
@@ -717,6 +747,39 @@ min-width: 10rem !important;
   #timer div span {
     font-size:20px !important;
 
+  }
+
+}
+
+@media (max-width:512px){
+ 
+  .steps> li:first-child .timeline-image::after{
+    height:530%;
+  }
+  .steps> li:first-child .timeline-image::after{
+      top:20px;
+      bottom: 30px;
+  }
+
+}
+@media (max-width:439px){
+ 
+  .steps> li:first-child .timeline-image::after{
+    height:600%;
+  }
+
+}
+@media (max-width:385px){
+ 
+  .steps> li:first-child .timeline-image::after{
+    height:700%;
+  }
+
+}
+@media (max-width:329px){
+ 
+  .steps> li:first-child .timeline-image::after{
+    height:760%;
   }
 
 }
